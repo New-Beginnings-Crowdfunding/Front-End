@@ -4,9 +4,11 @@ import { createGlobalStyle } from "styled-components";
 //     PRIMARY COLORS    //
 ////////////////////////////
 export const colorObj = {
-  light: "#FAF9F9",
-  mid: "#89B0AE",
-  dark: "#555B6E",
+  light: "#F6F6F6",
+  accent: "#D15F45",
+  primary: "#119DA4",
+  secondary: "#114355",
+  dark: "#0E252D",
 };
 
 const GlobalStyle = createGlobalStyle`
