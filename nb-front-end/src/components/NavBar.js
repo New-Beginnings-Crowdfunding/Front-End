@@ -22,7 +22,7 @@ const NavBar = (props) => {
   return (
     <div>
       <Navbar color="color" light expand="md">
-        <img src={logoImg} style={{ height: "100px" }}></img>
+        <img src={logoImg} alt="" style={{ height: "100px" }}></img>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
