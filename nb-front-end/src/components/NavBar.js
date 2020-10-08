@@ -10,7 +10,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Button,
 } from "reactstrap";
 import logoImg from "../assets/MainLogo.png";
 
@@ -48,7 +47,7 @@ const NavBar = (props) => {
                 Logout
               </NavLink>
             </NavItem>
-            <Button>Start A New Beginning</Button>
+            <button>Start A New Beginning</button>
           </Nav>
         </Collapse>
       </Navbar>
