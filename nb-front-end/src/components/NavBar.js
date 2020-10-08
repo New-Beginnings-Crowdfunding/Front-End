@@ -12,6 +12,7 @@ import {
   DropdownItem,
 } from "reactstrap";
 import logoImg from "../assets/MainLogo.png";
+import { ButtonStyled } from "../styles/GlobalStyle";
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +48,7 @@ const NavBar = (props) => {
                 Logout
               </NavLink>
             </NavItem>
-            <button>Start A New Beginning</button>
+            <ButtonStyled>Start A New Beginning</ButtonStyled>
           </Nav>
         </Collapse>
       </Navbar>
