@@ -12,7 +12,6 @@ export const colorObj = {
 };
 
 const GlobalStyle = createGlobalStyle`
-
 html, body, #root, #app{
   height: 100%;
 } 
@@ -26,5 +25,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button{
+  background-color: ${colorObj.primary}
+  border-radius: 20px;
+}
 `;
+
 export default GlobalStyle;
