@@ -20,6 +20,11 @@ export const ButtonStyled = styled.button`
   box-shadow: 2px 0.1px 4px 0.2px ${colorObj.secondary};
 `;
 
+export const BackgroundImg = styled.img`
+  width: 100%;
+  position: absolute;
+`;
+
 const GlobalStyle = createGlobalStyle`
 html, body, #root, #app{
   height: 100%;
