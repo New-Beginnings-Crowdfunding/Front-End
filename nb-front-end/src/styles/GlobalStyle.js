@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 ////////////////////////////
 //     PRIMARY COLORS    //
@@ -10,6 +11,11 @@ export const colorObj = {
   secondary: "#114355",
   dark: "#0E252D",
 };
+
+export const ButtonStyled = styled.button`
+  background-color: ${colorObj.primary};
+  border-radius: 20px;
+`;
 
 const GlobalStyle = createGlobalStyle`
 html, body, #root, #app{
@@ -25,10 +31,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-button{
-  background-color: ${colorObj.primary}
-  border-radius: 20px;
-}
 `;
 
 export default GlobalStyle;
