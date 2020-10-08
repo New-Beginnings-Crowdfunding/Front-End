@@ -14,7 +14,10 @@ export const colorObj = {
 
 export const ButtonStyled = styled.button`
   background-color: ${colorObj.primary};
-  border-radius: 20px;
+  border-radius: 10px;
+  padding: 1%;
+  color: ${colorObj.light};
+  box-shadow: 2px 0.1px 4px 0.2px ${colorObj.secondary};
 `;
 
 const GlobalStyle = createGlobalStyle`
