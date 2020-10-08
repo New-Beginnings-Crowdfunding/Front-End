@@ -17,6 +17,11 @@ export const ButtonStyled = styled.button`
   border-radius: 20px;
 `;
 
+export const BackgroundImg = styled.img`
+  width: 100%;
+  position: absolute;
+`;
+
 const GlobalStyle = createGlobalStyle`
 html, body, #root, #app{
   height: 100%;
