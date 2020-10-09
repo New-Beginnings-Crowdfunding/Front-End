@@ -7,7 +7,7 @@ import { colorObj } from "./GlobalStyle";
 
 export const FooterStyle = styled.div`
   display: flex;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   align-items: center;
