@@ -5,7 +5,6 @@ function Header() {
   return (
     <div className="header">
       <NavBar />
-      <h1>Header</h1>
     </div>
   );
 }
