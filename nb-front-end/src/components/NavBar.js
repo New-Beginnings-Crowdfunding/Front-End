@@ -11,7 +11,7 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
-import logoImg from "../assets/MainLogo.png";
+import logoImg from "../assets/MainLogo_Darkmode.png";
 import { ButtonStyled } from "../styles/GlobalStyle";
 
 const NavBar = (props) => {
