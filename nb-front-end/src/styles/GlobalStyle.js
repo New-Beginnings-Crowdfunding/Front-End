@@ -23,6 +23,7 @@ export const ButtonStyled = styled.button`
 export const BackgroundImg = styled.img`
   width: 100%;
   position: absolute;
+  z-index: -1;
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -37,6 +38,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  font-size: 2rem;
+  color: ${colorObj.light};
 }
 
 `;
