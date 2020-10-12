@@ -10,6 +10,7 @@ const Centered = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 600px;
 `;
 
 function App() {
