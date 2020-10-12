@@ -43,6 +43,7 @@ body {
 h1{
   font-size: 2rem;
   color: ${colorObj.light};
+  text-shadow: 0 2px 4px  ${colorObj.dark};
 }
 
 `;
