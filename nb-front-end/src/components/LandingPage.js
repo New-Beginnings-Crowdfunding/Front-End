@@ -21,7 +21,7 @@ function App() {
             <Centered>
                 <h1>Discover the future of business and technology</h1>
             </Centered>
-            <div style={{ height: "1200px" }}></div>
+            <div style={{ height: "500px" }}></div>
             <h1 style={{ color: "black" }}>Top Beginnings</h1>
             <div
                 style={{
