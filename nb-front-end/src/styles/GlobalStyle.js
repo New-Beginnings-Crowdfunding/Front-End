@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
+
 ////////////////////////////
 //     PRIMARY COLORS    //
 ////////////////////////////
@@ -20,11 +21,6 @@ export const ButtonStyled = styled.button`
   box-shadow: 2px 0.1px 4px 0.2px ${colorObj.secondary};
 `;
 
-export const BackgroundImg = styled.img`
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-`;
 
 const GlobalStyle = createGlobalStyle`
 html, body, #root, #app{
@@ -43,7 +39,6 @@ body {
 h1{
   font-size: 2rem;
   color: ${colorObj.light};
-  text-shadow: 0 2px 4px  ${colorObj.dark};
 }
 
 `;
