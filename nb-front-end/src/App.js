@@ -1,36 +1,17 @@
 import React from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import mainImg from "./assets/promo4.jpg";
-import { BackgroundImg, colorObj } from "./styles/GlobalStyle";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import CampaignStep1 from "./components/campaign-creation/CampaignStep1"
+import LandingPage from "./components/LandingPage"
+
 
 function App() {
   return (
-    <div className="App">
-      <BackgroundImg src={mainImg} alt="" />
-      <Header />
-      <div style={{ height: "1200px" }}></div>
-      <h1>Top Beginnings</h1>
-      <div
-        style={{
-          height: "500px",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          padding: "100px",
-        }}
-      >
-        <p style={{ border: "solid red", width: "300px" }}>Card</p>
-        <p style={{ border: "solid red", width: "300px" }}>Card</p>
-        <p style={{ border: "solid red", width: "300px" }}>Card</p>
+    <Router>
+      <div>
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/create-campaign" component={CampaignStep1}/>
       </div>
-      <div style={{ height: "300px", border: "solid blue" }}>
-        <h2>Meet Nicholas</h2>
-        <p>Blah blah blah</p>
-      </div>
-      <div style={{ height: "200px" }}></div>
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

@@ -1,10 +1,10 @@
-import react from "react";
-import Header from "../Header";
+import React from "react";
+import logo from "../../assets/MainLogo.png"
 
 export default function CampaignStep1() {
 	return (
-		<>
-			<Header />
+		<div>
+			<img src={logo} alt=""/>
 			<div>
 				<h1> This is a start of a New Beginning</h1>
 				<h2>What is the name of your startup?</h2>
@@ -12,6 +12,6 @@ export default function CampaignStep1() {
 					<input type="text" />
 				</form>
 			</div>
-		</>
+		</div>
 	);
 }
