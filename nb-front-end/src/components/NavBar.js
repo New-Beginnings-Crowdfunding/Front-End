@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -48,7 +49,7 @@ const NavBar = (props) => {
                 Logout
               </NavLink>
             </NavItem>
-            <ButtonStyled>Start A New Beginning</ButtonStyled>
+            <Link to="/create-campaign"><ButtonStyled> Start A New Beginning </ButtonStyled></Link>
           </Nav>
         </Collapse>
       </Navbar>
