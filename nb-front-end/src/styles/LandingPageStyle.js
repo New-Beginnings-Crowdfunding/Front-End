@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { colorObj } from "./GlobalStyle";
-
+import mainImg from "../assets/landingHeroImage.png";
 
 export const TopSection = styled.div`
     ${'' /* display: flex; */}
     ${'' /* flex-direction: column; */}
-    width: 100%;
+    ${'' /* width: 100vw; */}
+    background-image: url(${mainImg});
     height: 100vh;
     border: solid orange;
-    background-image: url("../assets/landingHeroImage.png");
     background-size: cover;
     background-repeat: no-repeat;
 `;

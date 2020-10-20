@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import mainImg from "../assets/landingHeroImage.png";
-import styled from "styled-components";
 import {TopSection, Centered, CardSection} from "../styles/LandingPageStyle";
 
 function App() {
@@ -10,6 +9,7 @@ function App() {
         <div className="landing">
             <TopSection>
             <Header />
+            
             <Centered>
                 <h1>Discover the future of business and technology</h1>
             </Centered>
