@@ -13,20 +13,12 @@ function LandingPage() {
                     <h1>Discover the future of business and technology</h1>
                 </Centered>
             </TopSection>
-            <h1 style={{ color: "black" }}>Top Beginnings</h1>
-            <div /* I tried to turn this into a styled component "CardSection" but for some reason it wouldn't work. */
-                style={{
-                height: "800px",
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                padding: "100px",
-                }}
-            >
+            <h1 style={{ color: "black", padding: "2%" }}>Top Beginnings</h1>
+            <CardSection>
                 <StudentCard />
                 <StudentCard />
                 <StudentCard />
-            </div>
+            </CardSection>
             <StoryBanner>
                 <h2>Stories of New Beginnings</h2>
                 <h1>Meet Nicholas</h1>

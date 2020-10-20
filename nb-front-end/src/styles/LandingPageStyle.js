@@ -15,22 +15,29 @@ export const Centered = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
+    padding-bottom: 15%;
+    text-shadow: 2px 2px 4px #000000;
 `;
 
 export const CardSection = styled.div`
-${'' /* border: solid green; */}
-display: "flex";
-flex-direction: "row";
-justify-content: "space-between";
-padding: "100px";
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 5%;
+padding-top: 0;
+@media (max-width: 700px) {
+    flex-direction: column;
+  } */}
 `;
 
 export const StudentCardStyle = styled.div`
-background-color: ${colorObj.secondary};
+background-color: ${colorObj.primary};
+background-image: linear-gradient(rgba(255,0,0,0), ${colorObj.secondary});
 color: ${colorObj.light};
-height: 90%;
-width: 20%;
-border-radius: 4%;
+width: 300px;
+border-radius: 2%;
+box-shadow: 7px 7px 1px ${colorObj.dark};
+
 `;
 
 export const StoryBanner = styled.div`
