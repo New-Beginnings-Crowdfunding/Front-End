@@ -34,13 +34,23 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
 }
 
 h1{
-  font-size: 2rem;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 1px;
+  font-size: 3rem;
   color: ${colorObj.light};
 }
 
+
+h2{
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: ${colorObj.light};
+}
 `;
 
 export default GlobalStyle;
