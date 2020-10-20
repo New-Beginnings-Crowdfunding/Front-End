@@ -1,43 +1,41 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import mainImg from "../assets/landingHeroImage.png";
-import {TopSection, Centered, CardSection} from "../styles/LandingPageStyle";
+import StudentCard from './StudentCard';
+import {TopSection, Centered, CardSection, StoryBanner} from "../styles/LandingPageStyle";
 
-function App() {
+function LandingPage() {
     return (
         <div className="landing">
             <TopSection>
-            <Header />
-            
-            <Centered>
-                <h1>Discover the future of business and technology</h1>
-            </Centered>
+                <Header />
+                <Centered>
+                    <h1>Discover the future of business and technology</h1>
+                </Centered>
             </TopSection>
-            <CardSection>
             <h1 style={{ color: "black" }}>Top Beginnings</h1>
-            <div
+            <div /* I tried to turn this into a styled component "CardSection" but for some reason it wouldn't work. */
                 style={{
-                height: "500px",
+                height: "800px",
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "space-between",
                 padding: "100px",
                 }}
             >
-                <p style={{ border: "solid red", width: "300px" }}>Card</p>
-                <p style={{ border: "solid red", width: "300px" }}>Card</p>
-                <p style={{ border: "solid red", width: "300px" }}>Card</p>
+                <StudentCard />
+                <StudentCard />
+                <StudentCard />
             </div>
-            </CardSection>
-            <div style={{ height: "300px", border: "solid blue" }}>
-                <h2>Meet Nicholas</h2>
+            <StoryBanner>
+                <h2>Stories of New Beginnings</h2>
+                <h1>Meet Nicholas</h1>
                 <p>Blah blah blah</p>
-            </div>
+            </StoryBanner>
             <div style={{ height: "200px" }}></div>
             <Footer />
             </div>
     );
 }
 
-export default App;
+export default LandingPage;
